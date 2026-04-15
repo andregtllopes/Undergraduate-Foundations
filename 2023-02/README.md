@@ -16,6 +16,3 @@ This period was marked by the consolidation of core engineering principles throu
 
 ## 🏛️ Institutional Engagement
 * **GRAERO (Board of Sports):** In October 2023, I joined the Student Union, focusing on logistics, team management, and student integration, which helped develop essential soft skills in leadership and communication.
-
-## 🧠 Perspective
-By the end of this semester, the synergy between mathematics, physics, and computation became clear. The ability to model a physical phenomenon and translate it into a functional algorithm became a primary interest, setting the stage for future research in AI and numerical simulations.
