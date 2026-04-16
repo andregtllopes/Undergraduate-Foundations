@@ -19,6 +19,3 @@ This period marked a transition into the study of physical fields and dynamic sy
 
 ## 🏛️ Institutional Engagement
 * **GRAERO (Board of Sports):** Continued tenure in the Student Union, managing logistics and student integration while balancing a 360-hour academic semester.
-
-## 🧠 Perspective
-By the end of this semester, the synergy between high-level engineering mathematics and business management became clear. The ability to solve complex differential equations while understanding the commercial viability of a project is now a core part of my professional identity. This semester set the foundation for the upcoming international exchange program by hardening my technical resilience.
