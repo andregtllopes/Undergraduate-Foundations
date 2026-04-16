@@ -22,6 +22,15 @@ This project is a **Jupyter Notebook** (.ipynb). Since the program is interactiv
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/andregtllopes/Undergraduate-Foundations.git](https://github.com/andregtllopes/Undergraduate-Foundations.git)
+2. **Navigate to the project folder:**
+   ```bash
+   cd 2023-02/Numerical-Methods-Linear-Systems
+3. **Run the Notebook:**
+   Open the file in VS Code, Jupyter Lab, or Google Colab.
+4. **Execution:**
+   Simply run the cells. The program will prompt you for the number of equations and the specific coefficients in the terminal/console.
+
+**First-Principles Note:** This implementation uses only standard Python. No external dependencies or libraries (such as NumPy) are required, keeping the code strictly tied to the fundamental mathematical logic.
 
 ## 🧠 Lessons Learned
 Being my first project, it was fundamental for understanding:
