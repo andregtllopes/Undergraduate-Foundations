@@ -15,6 +15,14 @@ $$X_i = \frac{B_i - \sum_{j=1}^{i-1} L_{ij}X_j}{L_{ii}}$$
 * **Convergence Guarantee:** Automated check for non-zero values on the main diagonal to prevent division by zero and ensure system solvability.
 * **Scientific Formatting:** Results are presented with three-decimal precision for technical clarity.
 
+## 💻 How to Run
+
+This project is a **Jupyter Notebook** (.ipynb). Since the program is interactive and relies on standard Python `input()` functions, it is best experienced in a live environment.
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/andregtllopes/Undergraduate-Foundations.git](https://github.com/andregtllopes/Undergraduate-Foundations.git)
+
 ## 🧠 Lessons Learned
 Being my first project, it was fundamental for understanding:
 1. The importance of **First-Principles** (understanding the math before the code).
