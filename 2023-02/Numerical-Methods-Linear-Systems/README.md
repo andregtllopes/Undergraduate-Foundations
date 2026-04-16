@@ -21,7 +21,7 @@ This project is a **Jupyter Notebook** (.ipynb). Since the program is interactiv
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/andregtllopes/Undergraduate-Foundations.git](https://github.com/andregtllopes/Undergraduate-Foundations.git)
+   git clone https://github.com/andregtllopes/Undergraduate-Foundations.git
 2. **Navigate to the project folder:**
    ```bash
    cd 2023-02/Numerical-Methods-Linear-Systems
