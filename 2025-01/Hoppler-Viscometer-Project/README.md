@@ -64,6 +64,7 @@ The notebook is designed to be **self-contained**. All physical constants (**loc
 
 ```bash
 pip install numpy matplotlib
+```
 
 ## 3. Execution
 
