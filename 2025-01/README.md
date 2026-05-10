@@ -27,7 +27,7 @@ A full-scale implementation of the classic arcade game developed in C using the 
 A shift from manual workflows to Python-based scientific pipelines (NumPy, Pandas, CoolProp) for processing experimental data.
 
 - **Automation:** Developed iterative solvers for Reynolds and Drag Coefficient ($C_d$) coupling and validated Rateux laws in blowers using 30Hz operational data.
-- **Final Project (Hoppler Viscometer):** Designed a functional falling-ball viscometer under severe geometric constraints.
+- **Final Project (Hoppler Viscometer):** Computational design of a falling-ball viscometer under severe geometric constraints.
   - **Constraint-Based Design:** Utilized numerical simulations to model Faxén’s wall effect corrections, resulting in a final measurement uncertainty of only 1.57%, meeting commercial precision standards.
 
 ## 🧠 Perspective
