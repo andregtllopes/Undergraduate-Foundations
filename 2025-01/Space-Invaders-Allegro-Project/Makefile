@@ -7,18 +7,18 @@ PATH_ALLEGRO=$(FOLDER)$(FOLDER_NAME)
 LIB_ALLEGRO=\lib\liballegro-$(ALLEGRO_VERSION)-monolith-mt.a
 INCLUDE_ALLEGRO=\include
 
-all: space_invaders.exe
+all: space_invaders_engine.exe
 
 
-space_invaders.exe: space_invaders.o
-	gcc -o space_invaders.exe space_invaders.o $(PATH_ALLEGRO)$(LIB_ALLEGRO)
+space_invaders_engine.exe: space_invaders_engine.o
+	gcc -o space_invaders_engine.exe space_invaders_engine.o $(PATH_ALLEGRO)$(LIB_ALLEGRO)
 
-space_invaders.o: space_invaders.c
-	gcc -I $(PATH_ALLEGRO)$(INCLUDE_ALLEGRO) -c space_invaders.c	
+space_invaders_engine.o: space_invaders_engine.c
+	gcc -I $(PATH_ALLEGRO)$(INCLUDE_ALLEGRO) -c space_invaders_engine.c	
 
 	
 clean:
-	rm -f space_invaders.o
-	rm -f space_invaders.exe
+	rm -f space_invaders_engine.o
+	rm -f space_invaders_engine.exe
 
 

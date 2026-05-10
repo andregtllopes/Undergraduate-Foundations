@@ -35,9 +35,9 @@ const int SIZEA_X = 50;
 const int SIZEA_Y = 25;
 
 
-// LÊ O RECORDE ATUAL DO ARQUIVO "recorde.txt"
+// LÊ O RECORDE ATUAL DO ARQUIVO "record.txt"
 int ler_recorde() {
-    FILE *arq = fopen("recorde.txt", "r"); 
+    FILE *arq = fopen("record.txt", "r"); 
     int recorde_lido = 0;
 
     // Se o arquivo não existir ou não puder ser aberto, arq será NULL.
@@ -60,7 +60,7 @@ int ler_recorde() {
 
 // SALVA O VALOR FINAL DO RECORDE NO ARQUIVO
 void salvar_recorde(int recorde_final) {
-    FILE *arq = fopen("recorde.txt", "w"); // "w" = write (escrever/sobrescrever)
+    FILE *arq = fopen("record.txt", "w"); // "w" = write (escrever/sobrescrever)
 
     // Se houver um erro ao abrir para escrita, apenas informa e sai.
     if (arq == NULL) {
