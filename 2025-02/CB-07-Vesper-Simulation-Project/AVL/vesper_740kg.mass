@@ -1,0 +1,18 @@
+# Vesper - Condição 1 (Pesado - Pessoal - 740kg)
+# 
+# Informações gerais
+Lunit = 1 m
+Munit = 1  kg
+Tunit = 1.0    s
+
+#-------------------------------------------------
+
+# Gravidade e densidade do ar (g e rho para altitude de 2700m)
+g   = 9.798
+rho = 0.871
+
+#-------------------------
+# Massa[kg]  X_cg[m]  Y_cg[m]  Z_cg[m]   Ixx     Iyy       Izz
+  740    0.34    0   0  3541.0  1696.9  4563.5 
+
+

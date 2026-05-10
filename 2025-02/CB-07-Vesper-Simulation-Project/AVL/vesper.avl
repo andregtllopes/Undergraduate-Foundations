@@ -1,0 +1,119 @@
+Vesper AVL
+#Mach
+0.0 
+#0.038641
+
+#IYsym   IZsym   Zsym
+0       0       0.0
+#Sref        Cref          Bref (Asa) (Valores de referência)
+17.87       1.07         17.5
+#Xref          Yref        Zref (CG) (Ponto de referência. O CG real virá do .mass)
+0.0             0.0          0.0
+
+#===============================================================================================================
+
+SURFACE
+Asa Principal
+#Nchord Cspace Nspan Sspace
+15 1 40 1 
+YDUPLICATE #(Cria a outra asa)
+ 0.0
+ANGLE #(Incidência da asa inteira)
+ 3.0
+
+# --- Seção 1: Raiz --------------------------------------------------------------------------------------------
+
+SECTION 
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0       0        0     1.309       0 
+AFILE
+../AVL/fx61184.dat
+
+# --- Seção 2: Início Aileron ----------------------------------------------------------------------------------
+SECTION
+# Xle    Yle    Zle    Chord   Ainc (Xle provisório usando enflechamento de 1.06)
+ 0.097    5.25  0.229  1.047    0.0
+AFIL
+../AVL/fx61184.dat
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup  (Xhinge provisório)
+aileron        1      0.765          0 1 0    -1
+
+# --- Seção 3: Final Aileron ----------------------------------------------------------------------------------
+SECTION
+# Xle    Yle    Zle    Chord   Ainc (Xle provisório usando enflechamento de 1.06)
+ 0.162   8.75   0.382  0.524  0.0
+AFIL
+../AVL/fx60126.dat
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup  (Xhinge provisório)
+aileron        1      0.742          0 1 0    -1
+
+#===============================================================================================================
+
+SURFACE
+Empenagem Horizontal
+# Nchord Cspace Nspan Sspace
+10 1 20 1
+
+YDUPLICATE #(Cria o outro lado)
+0.0
+
+ANGLE
+0
+
+TRANSLATE #(Move a superfície para a posição da cauda)
+# Xle     Yle     Zle
+  5.383    0      1.8
+
+# --- Seção 1: Raiz EH -----------------------------------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord     Ainc
+0.0     0.0     0.0      0.84       0.0
+
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup #(Xhinge pagina 143 pdf)
+elevator       1      0.69          0 1 0     1.0
+
+# --- Seção 2: Ponta EH ----------------------------------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord     Ainc
+0.12   1.545   0.0      0.42      0.0  
+
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup  #(Xhinge pagina 143 pdf)
+elevator       1      0.721        0 1 0     1.0
+
+#===============================================================================================================
+
+SURFACE
+Empenagem Vertical
+# Nchord Cspace Nspan Sspace
+    6       1     10     1
+TRANSLATE 
+# Xle     Yle     Zle 
+4.683 	   0 	  0.3
+
+# --- Seção 1: Raiz EV -----------------------------------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord     Ainc (pagina 191)
+0.0     0.0     0.0      1.4       0.0
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+rudder         1      0.75          0 0 -1     1.0 
+
+# --- Seção 2: Ponta EV ----------------------------------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord     Ainc (pagina 191)
+ 0.7     0.0    1.50     0.7       0.0  
+
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+rudder         1      0.555          0 0 -1     1.0
+
